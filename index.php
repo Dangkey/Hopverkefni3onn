@@ -197,7 +197,8 @@ if(isset($_GET['cookie'])){
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <button   class="button"><a href="https://www.youtube.com/watch?v=WXcD4ePJWEc"><span>Store</span></a></button>
+          <button   class="button"><a href="./flexboxstore.php"><span>Store</span></a></button>
+          <button   class="button"><a href="./login.php"><span>Store Admin</span></a></button>
           <h5>
 
 
