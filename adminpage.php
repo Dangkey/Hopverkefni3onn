@@ -4,6 +4,7 @@
 	include "connection.php";
 	include "query.php";
  ?>
+ 
 <table border="1">	
 <tr>
 	<th>Mynd Heiti</th>
@@ -30,7 +31,7 @@
         <input type="text" name="Price" required ><br>
 
         <input type="submit">
-    </form>
+    </form>    
 
 <?php session_start(); /* Starts the session */
 
@@ -38,5 +39,6 @@ if(!isset($_SESSION['UserData']['Username'])){
   header("location:login.php");
   exit;
 }
+
 ?>
-Velkominn admin. <a href="logout.php">Ýttu hérna</a> til að logga út.
+<button><a href="logout.php">Log Out</a></button>
