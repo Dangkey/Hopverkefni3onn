@@ -2185,7 +2185,7 @@ video.responsive-video {
 .parallax-container {
   position: relative;
   overflow: hidden;
-  height: 500px; 
+  height: 650px; 
 
 }
 
@@ -3176,7 +3176,7 @@ a {
 
 html {
   line-height: 1.5;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87); }
   @media only screen and (min-width: 0) {
@@ -6345,7 +6345,7 @@ Takkar
   border-radius: 4px;
   background-color: #f4511e;
   border: none;
-  color: #FFFFFF;
+  color: #fff;
   text-align: center;
   font-size: 28px;
   padding: 20px;
@@ -6360,6 +6360,7 @@ Takkar
   display: inline-block;
   position: relative;
   transition: 0.5s;
+  color: #fff;
 }
 
 .button span:after {
@@ -6389,7 +6390,7 @@ TOPMENU
   position: fixed;
   top: 0;
   left: 0;
-  background: #545454;
+  background: #fff;
   width: 240px;
   height: 100%;
   transform: translate3d(-240px, 0, 0);
@@ -6400,12 +6401,12 @@ TOPMENU
   position: absolute;
   right: -60px;
   width: 60px;
-  height: 60px;
+  height: 63px;
   line-height: 0px;
   display: block;
   padding: 0;
   text-indent: -9999px;
-  background: #545454 url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50%/25px 25px no-repeat;
+  background: #fff url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50%/25px 25px no-repeat;
 }
 .menu ul li > label {
 
@@ -6418,7 +6419,8 @@ TOPMENU
   padding: 0 20px;
   line-height: 60px;
   text-decoration: none;
-  color: #fff;
+  color: #000;
+  font-weight: bold;
 }
 .menu ul li a:hover, .menu ul li label:hover {
   color: #666;
