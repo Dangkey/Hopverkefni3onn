@@ -1,6 +1,6 @@
 <?php 
 	try {
-		$sql = "select imageName, imagePath FROM images";
+		$sql = "select imageName, imagePath, Price FROM images";
 		// PDO->query(); er notað fyrir SELECT statements ONLY, skilar object af PDOStatement class
 		$result = $pdo ->query($sql);
 		
@@ -9,6 +9,6 @@
 	}
 	// fetch() sækir eina röð í einu frá database.
 	while($row = $result -> fetch()){
-		$Images[] = array($row['imageName'], $row['imagePath']);
+		$Images[] = array($row['imageName'], $row['imagePath'], $row['Price']);
 	}
  ?>
