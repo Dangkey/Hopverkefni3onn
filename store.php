@@ -2,6 +2,7 @@
 	include "connection.php";
 	include "query.php";
  ?>
+ <link href="css/store.css" type="text/css" rel="stylesheet"/>
 <tr>
 	</tr>
 	<?php 
