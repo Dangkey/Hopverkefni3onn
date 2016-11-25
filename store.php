@@ -3,13 +3,18 @@
 	include "query.php";
  ?>
  <link href="css/store.css" type="text/css" rel="stylesheet"/>
-<tr>
-	</tr>
+<body>
+	<table class="tablestore">
 	<?php 
+
 		# birtir töflu með player og score
 		foreach ($Images as $entry) {
-			echo '<tr><td>'.$entry[0].'</td><td><img src="'.$entry[1].'" width="200px" height="200px"></td></tr>' . $entry[2] . "<br>";
+			echo '<tr><th>'.$entry[0].'</th><th><img src="'.$entry[1].'" width="200px" height="200px"></th><th>' . $entry[2] . "</th></tr>";
+
+
 		}
 	 ?>
-
-<a href="index.php">Til baka á aðalsíðuna</a>
+</table>
+<h2>Recently Viewed</h2>
+<button><a href="index.php">Til baka á aðalsíðuna</a></button>
+</body>
