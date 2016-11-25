@@ -1,8 +1,10 @@
-.tablestore
-{
-	border-color: black;
-	border: 1px solid;
+table, th, td {
+    border: 1px solid black;
+    font: bold;
 }
+
+
 body{
-	background-image: url("../store.jpg");
+	background-color: gray;
+	color: white;
 }

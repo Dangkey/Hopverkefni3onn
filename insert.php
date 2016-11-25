@@ -13,7 +13,7 @@ if(!empty($imageName) && !empty($imagePath))
 {
 	// SQL skipun/fyrirspurnin - gott að athuga fyrst hvort hún sé rétt  með að skrifa í og prófa í phpmyadmin eða workbench 
 	// hér erum við að nota placeholder (er með : á undan) fyrir gildi úr $_POST fylki.
-	$sql = 'INSERT INTO images(imageName, imagePath,price)VALUES(:imageName,:imagePath,:Price)'; 
+	$sql = 'INSERT INTO images(imageName, imagePath,Price)VALUES(:imageName,:imagePath,:Price)'; 
 	
 	// Prepare setning (e. statement) er sql fyrirspurn sem þú sendir til miðlara (e. server) áður en þú framkvæmir hana
 	// þetta er gerir miðlaranum (MySQL) kleift að undirbúa sig fyrir keyrslu (kemur í veg árásir á gagnagrunn (SQL injection))
@@ -31,7 +31,7 @@ if(!empty($imageName) && !empty($imagePath))
 		// execute segir MySQL að framkvæma SQL kóða á gagnagrunn með gildunum.
 		$q->execute();  
 		echo "Það tókst að skrifa eftirfarandi upplýsingar í gagnagrunn<br>";
-		echo "$imageName, $imagePath og $Price";
+		echo "$imageName, $imagePath og $Price <br> <a href='adminpage.php'>Til Baka</a>";
 	}
 	//
 	catch (PDOException $ex){
