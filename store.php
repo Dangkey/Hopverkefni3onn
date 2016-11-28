@@ -30,7 +30,7 @@
 		}
 		echo '</tr><tr>';
 		foreach ($price	 as $entry	) {
-			echo '<td>'.$entry.'</td>';
+			echo '<td>'.$entry.'<button>Buy Now</button></td>';
 		}
 		echo '</tr>';
 
@@ -60,7 +60,16 @@ if(isset($_GET['cookie'])){
     if($id == 3){
         $img = $img.'3';
     }
-    if (strlen($img)==5) {
+    if($id == 4){
+        $img = $img.'4';
+    }
+    if($id == 5){
+        $img = $img.'5';
+    }
+    if($id == 6){
+        $img = $img.'6';
+    }
+    if (strlen($img)==8) {
         $img = substr($img, 1);
     }
 
@@ -89,5 +98,6 @@ if(isset($_GET['cookie'])){
 
             */
         ?>
+
 <button><a href="index.php"><br>Til baka á aðalsíðuna</a></button>
 </body>

@@ -8,3 +8,7 @@ body{
 	background-color: gray;
 	color: white;
 }
+button{
+	padding-left: 50px;
+	padding-right: 50px;
+}
