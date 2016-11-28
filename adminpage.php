@@ -10,11 +10,12 @@
 	<th>Mynd Heiti</th>
 	<th>Mynd</th>
 	<th>Price</th>
+	<th>Link</th>
 	</tr>
 	<?php 
 		# birtir töflu með player og score
 		foreach ($Images as $entry) {
-			echo '<tr><td>'.$entry[0].'</td><td><img src="'.$entry[1].'" width="400px" height="400px"</td><td>' . $entry[2] ."</td></tr>";
+			echo '<tr><td>'.$entry[0].'</td><td><img src="'.$entry[1].'" width="100px" height="100px"</td><td>' . $entry[2] ."</td><td>" . $entry[3] ."</td></tr>";
 		}
 	 ?>
 </table>
@@ -29,6 +30,9 @@
 
         <label>Verð: </label>
         <input type="text" name="Price" required ><br>
+
+        <label>Slóð til að kaupa: </label>
+        <input type="text" name="link" required ><br>
 
         <input type="submit">
     </form>    

@@ -7,13 +7,14 @@ include "connection.php";
 $imageName = $_POST['imageName']; 	
 // erum hér að ná í skorið úr forminu, ath tölugildi koma sem strengur frá input í formi.
 $imagePath = $_POST['imagePath'];
-$Price = $_POST['Price']; 		
+$Price = $_POST['Price']; 	
+$link = $_POST['link']; 		
 //er hérna að athuga hvort breyturnar séu ekki tómar
 if(!empty($imageName) && !empty($imagePath)) 
 {
 	// SQL skipun/fyrirspurnin - gott að athuga fyrst hvort hún sé rétt  með að skrifa í og prófa í phpmyadmin eða workbench 
 	// hér erum við að nota placeholder (er með : á undan) fyrir gildi úr $_POST fylki.
-	$sql = 'INSERT INTO images(imageName, imagePath,Price)VALUES(:imageName,:imagePath,:Price)'; 
+	$sql = 'INSERT INTO images(imageName, imagePath,Price, link)VALUES(:imageName,:imagePath,:Price, :link)'; 
 	
 	// Prepare setning (e. statement) er sql fyrirspurn sem þú sendir til miðlara (e. server) áður en þú framkvæmir hana
 	// þetta er gerir miðlaranum (MySQL) kleift að undirbúa sig fyrir keyrslu (kemur í veg árásir á gagnagrunn (SQL injection))
@@ -28,10 +29,11 @@ if(!empty($imageName) && !empty($imagePath))
 		$q->bindValue(':imageName',$imageName); // gildið í $imageName er sett í placeholder imageName og sent.
 		$q->bindValue('imagePath',$imagePath);
 		$q->bindValue('Price',$Price);
+		$q->bindValue('link',$link);
 		// execute segir MySQL að framkvæma SQL kóða á gagnagrunn með gildunum.
 		$q->execute();  
 		echo "Það tókst að skrifa eftirfarandi upplýsingar í gagnagrunn<br>";
-		echo "$imageName, $imagePath og $Price <br> <a href='adminpage.php'>Til Baka</a>";
+		echo "$imageName, $imagePath , $Price og $link <br> <a href='adminpage.php'>Til Baka</a>";
 	}
 	//
 	catch (PDOException $ex){
