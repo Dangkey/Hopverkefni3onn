@@ -3,6 +3,7 @@
 	include "query.php";
  ?>
  <link href="css/store.css" type="text/css" rel="stylesheet"/>
+ <title>Store</title>
 <body>
 	<table class="tablestore">
 
