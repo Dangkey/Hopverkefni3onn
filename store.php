@@ -11,6 +11,7 @@
 	$name = null;
 	$image = null;
 	$price = null;
+    $links = null;
 	$teljari = 0;
 
 
@@ -19,6 +20,7 @@
 		$name[] = $entry[0]; 
 		$image[] = $entry[1];
 		$price[] = $entry[2];
+        $links[] = $entry[3];
 		}
 		echo '<tr>';
 		foreach ($name	 as $entry) {
@@ -31,9 +33,13 @@
 		}
 		echo '</tr><tr>';
 		foreach ($price	 as $entry	) {
-			echo '<td>'.$entry.'<button>Buy Now</button></td>';
+			echo '<td>'.$entry.'</td>';
 		}
-		echo '</tr>';
+		
+        foreach ($links as $entry) {
+            "<td><button><a href='".$entry."'>Buy Now</a></button></td>";
+        }
+        echo '</tr>';
 
 	 ?>
 </table>
