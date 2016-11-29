@@ -45,7 +45,7 @@
 
 	 ?>
 </table>
-<h2>Recently Viewed</h2>
+<h2 class="recent">Recently Viewed</h2>
 <?php
 
 
