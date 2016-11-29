@@ -2,16 +2,17 @@
 	include "connection.php";
 	include "query.php";
  ?>
- <link href="css/store.css" type="text/css" rel="stylesheet"/>
- <title>Store</title>
+  <link href="css/store.css" type="text/css" rel="stylesheet"/>
+ <html>
 <body>
+
 	<table class="tablestore">
 
 	<?php 
 	$name = null;
 	$image = null;
 	$price = null;
-    $links = null;
+    $link = null;
 	$teljari = 0;
 
 
@@ -20,7 +21,7 @@
 		$name[] = $entry[0]; 
 		$image[] = $entry[1];
 		$price[] = $entry[2];
-        $links[] = $entry[3];
+        $link[] = $entry[3];
 		}
 		echo '<tr>';
 		foreach ($name	 as $entry) {
@@ -32,14 +33,15 @@
 			
 		}
 		echo '</tr><tr>';
-		foreach ($price	 as $entry	) {
+		foreach ($price	 as $entry) {
 			echo '<td>'.$entry.'</td>';
 		}
-		
-        foreach ($links as $entry) {
-            "<td><button><a href='".$entry."'>Buy Now</a></button></td>";
+        echo '</tr><tr>';
+        foreach ($link  as $entry) {
+            echo '<td><br><button><a href="'.$entry.'">Buy Now</button></td>';
         }
-        echo '</tr>';
+           
+		echo '</tr>';
 
 	 ?>
 </table>
@@ -98,14 +100,17 @@ if(isset($_GET['cookie'])){
                     }
 
                 }
+
             } 
 
             /*
-            
             RECENTLY VIEWED Kóði ENDAR
 
             */
         ?>
 
-<button><a href="index.php"><br>Til baka á aðalsíðuna</a></button>
+<br><br><br><button><a href="index.php">Til baka á aðalsíðuna</a></button>
+<br><br>
+<button><a href="adminpage.php">Fara á admin síðu</a></button>
 </body>
+</html>

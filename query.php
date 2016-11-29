@@ -9,6 +9,6 @@
 	}
 	// fetch() sækir eina röð í einu frá database.
 	while($row = $result -> fetch()){
-		$Images[] = array($row['imageName'], $row['imagePath'], $row['Price'], $row['link']);
+		$Images[] = array($row['imageName'], $row['imagePath'], $row['Price'],$row['link']);
 	}
  ?>
