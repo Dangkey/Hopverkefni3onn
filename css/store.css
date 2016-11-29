@@ -1,12 +1,13 @@
 table{
     font: bold;
     text-align: center;    
+    display: block;
+    color: white;
 
 }
 tbody{
 	position: absolute;
-	top: 30px;
-	left: 200px;
+	top: 30px;	
 }
 #body{
 	position: absolute;
@@ -17,17 +18,18 @@ h2{
 	position: absolute;
 	left: 10px;
 	top: 350px;
+	color: white;
 }
 
 
 body{
-	background-color: gray;
+	background-image: url("../images/backyback.jpg");"
 	color: white;
 }
 button{	
 	padding-left: 50px;
 	padding-right: 50px;	
-    background-color: green;
+    background-color: white;
     border: none;
     color: white;    
     text-align: center;

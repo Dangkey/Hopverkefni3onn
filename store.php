@@ -3,10 +3,11 @@
 	include "query.php";
  ?>
   <link href="css/store.css" type="text/css" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
  <html>
 <body>
 
-	<table class="tablestore">
+	<table class="tablestore" style="max-width:1000px;">
 
 	<?php 
 	$name = null;
@@ -29,7 +30,7 @@
 		}
 		echo '</tr><tr>';
 		foreach ($image	 as $entry) {
-			echo "<td><a href='store.php?id=2&cookie=" . $teljari++ . "'><img src=' ".$entry."' width='200px' height='200px'></a></td>";
+			echo "<td><a href='store.php?cookie=" . $teljari++ . "'><img src=' ".$entry."' width='200px' height='200px'></a></td>";
 			
 		}
 		echo '</tr><tr>';
@@ -78,7 +79,31 @@ if(isset($_GET['cookie'])){
     if($id == 6){
         $img = $img.'6';
     }
-    if (strlen($img)==8) {
+    if($id == 7){
+        $img = $img.'7';
+    }
+    if($id == 8){
+        $img = $img.'8';
+    }
+    if($id == 9){
+        $img = $img.'9';
+    }
+    if($id == 10){
+        $img = $img.'10';
+    }
+    if($id == 11){
+        $img = $img.'11';
+    }
+    if($id == 12){
+        $img = $img.'12';
+    }
+    if($id == 13){
+        $img = $img.'13';
+    }
+    if($id == 14){
+        $img = $img.'14';
+    }
+    if (strlen($img)==20) {
         $img = substr($img, 1);
     }
 
