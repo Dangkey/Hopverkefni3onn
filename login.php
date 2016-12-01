@@ -33,16 +33,23 @@
       <td colspan="2" align="left" valign="top"><h3>Login</h3></td>
     </tr>
     <tr>
-      <td align="right" valign="top">Username</td>
+      <td align="left" valign="top">Username</td>
       <td><input name="Username" type="text" class="Input"></td>
     </tr>
     <tr>
-      <td align="right">Password</td>
+      <td align="left">Password</td>
       <td><input name="Password" type="password" class="Input"></td>
     </tr>
     <tr>
-      <td> </td>
-      <td><input name="Submit" type="submit" value="Login" class="Button3"></td>
+      
+      <td align="middle"><input name="Submit" type="submit" value="Login" class="Button3"></td>
+
     </tr>
+    <td><a href="http://tsuts.tskoli.is/2t/0405994799/hopverkefni3onn/index.html"><br>Til baka á aðalsíðu</a></td>
+
+
+       
+
   </table>
+
 </form>
