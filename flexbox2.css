@@ -142,12 +142,6 @@ p {
 
 
 
-
-<<<<<<< HEAD
-=======
-/*Top menu*/
-
->>>>>>> 3d78753866ec5bc3fa4da3539795f316a62f1fb4
 .menu {
   position: fixed;
   top: 0;
@@ -158,7 +152,6 @@ p {
   transform: translate3d(-240px, 0, 0);
   transition: transform 0.35s;
   z-index: 90000; 
-<<<<<<< HEAD
 }
 .menu label.menu-toggle {
   position: absolute;
@@ -171,20 +164,7 @@ p {
   text-indent: -9999px;
   background: #fff url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50%/25px 25px no-repeat;
 }
-=======
-}
-.menu label.menu-toggle {
-  position: absolute;
-  right: -60px;
-  width: 60px;
-  height: 63px;
-  line-height: 0px;
-  display: block;
-  padding: 0;
-  text-indent: -9999px;
-  background: #fff url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50%/25px 25px no-repeat;
-}
->>>>>>> 3d78753866ec5bc3fa4da3539795f316a62f1fb4
+
 .menu ul li > label {
 
   background: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-b-128.png) 95% 50%/16px 16px no-repeat;
