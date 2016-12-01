@@ -116,8 +116,7 @@ if(isset($_GET['cookie'])){
 <div id="body">
     <div>
         <?php
-            if(isset($_COOKIE['pic'])&&isset($_GET['cookie'])){
-                echo "<p>Nýlega Skoðað</p>";
+            if(isset($_COOKIE['pic'])&&isset($_GET['cookie'])){                
                 for ($i=strlen($img)-1; $i >= 0; $i--) { 
                         if($img[$i] == $id){
                         echo "<img src='".$image[$id]."' width='200px' height='200px'";

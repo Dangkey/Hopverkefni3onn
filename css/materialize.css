@@ -2546,7 +2546,8 @@ nav ul a span.badge {
   text-align: center; }
   .iframet
 {
-  padding-left: 22em;
+  position: relative;
+left: 25%;  
 }
 
 .left {
@@ -6439,4 +6440,16 @@ TOPMENU
 /* fade in checked menu */
 .menu-checkbox:checked + .menu {
   transform: translate3d(0, 0, 0);
+}
+
+/*
+Takkar
+*/
+.button1{
+position: relative;
+top: 100px;
+}
+.buttons{
+  position: relative;
+top: -100px;
 }
