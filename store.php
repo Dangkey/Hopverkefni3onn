@@ -133,7 +133,7 @@ if(isset($_GET['cookie'])){
             */
         ?>
 
-<br><br><br><button><a href="index.php">Til baka á aðalsíðuna</a></button>
+<br><br><br><button><a href="index.html">Til baka á aðalsíðuna</a></button>
 <br><br>
 <button><a href="adminpage.php">Fara á admin síðu</a></button>
 </body>

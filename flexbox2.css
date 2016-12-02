@@ -142,6 +142,9 @@ p {
 
 
 
+
+/*Top menu*/
+
 .menu {
   position: fixed;
   top: 0;
@@ -164,7 +167,6 @@ p {
   text-indent: -9999px;
   background: #fff url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50%/25px 25px no-repeat;
 }
-
 .menu ul li > label {
 
   background: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-b-128.png) 95% 50%/16px 16px no-repeat;
@@ -192,20 +194,12 @@ p {
 .menu .menu label.menu-toggle {
   background: none;
 }
-<<<<<<< HEAD
-
-/* fade in checked menu */
-.menu-checkbox:checked + .menu {
-  transform: translate3d(0, 0, 0);
-}
-=======
 
 /* fade in checked menu */
 .menu-checkbox:checked + .menu {
   transform: translate3d(0, 0, 0);
 }
 
->>>>>>> 3d78753866ec5bc3fa4da3539795f316a62f1fb4
 
 /* Small screens */
 @media all and (max-width: 767px) {

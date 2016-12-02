@@ -21,7 +21,7 @@
 		}
 	}
 ?>
-<title>Verkefni 5</title>
+<title>Login</title>
 <form action="" method="post" name="Login_Form">
   <table width="400" align="center">
     <?php if(isset($msg)){?>
@@ -40,16 +40,9 @@
       <td align="left">Password</td>
       <td><input name="Password" type="password" class="Input"></td>
     </tr>
-    <tr>
-      
+    <tr>      
       <td align="middle"><input name="Submit" type="submit" value="Login" class="Button3"></td>
-
     </tr>
     <td><a href="http://tsuts.tskoli.is/2t/0405994799/hopverkefni3onn/index.html"><br>Til baka á aðalsíðu</a></td>
-
-
-       
-
   </table>
-
 </form>
